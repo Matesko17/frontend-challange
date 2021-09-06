@@ -1,0 +1,251 @@
+@import 'variables';
+
+body {
+    background-color: $bg-color;
+
+    h1 {
+        font-family: 'Source Sans Pro';
+        font-size: 90px;
+        display: inline-block;
+        font-weight: bold;
+        margin: 0;
+        padding-left: 40px;
+        .text-highlight {
+            color: $text-green;
+            padding-left: 1em;
+            font-size: 84px;
+        }
+    }
+
+    p {
+        font-family: 'Source Sans Pro';
+        font-size: 28px;
+        color: $p-text;
+        max-width: 650px;
+    }
+
+    .price-banner {
+        background-color: white;
+        position: relative;
+        z-index: 200;
+        top: 30px;
+        left: calc(100% - 330px);
+        max-width: 289px;
+        border-radius: 12px;
+        box-shadow: -8px 14px 27px rgba(0, 0, 0, 0.16);
+        padding: 15px 20px;
+        h3 {
+            font-family: 'Source Sans Pro';
+            font-size: 38px;
+            font-weight: 600;
+            margin: 0;
+            color: $text-green;
+        }
+        p {
+            font-size: 32px;
+            margin: 0;
+            color: black;
+        }
+        hr {
+            max-width: 170px;
+            margin-left: 0;
+            color: $orange;
+            border: 2px solid $orange;
+        }
+    }
+    .icons {
+        position: relative;
+        z-index: 100;
+        flex-basis: 5%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding-bottom: 300px;
+        a {
+            margin: 40px 0;
+            font-family: Fontawesome;
+            color: black;
+            padding: 10px 0;
+        }
+        i {
+            font-size: 26px;
+            width: 26px;
+            text-align: center;
+            border: 1px solid rgb(13, 146, 6, 0.79);
+            border-radius: 50px;
+            padding: 17px;
+            position: fixed;
+            z-index: 300;
+        }
+        i:hover {
+            color: white;
+            background: $hover-green;
+        }
+        &__social {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            i:hover {
+                text-align: start;
+                width: 240px;
+                display: flex;
+                justify-content: center;
+                border: 1px solid $hover-green;
+                &::after {
+                    content: "This is some text";
+                    padding-left: 15px;
+                    font-size: 26px;
+                    font-family: 'source sans pro';
+                    font-weight: 400;
+                    padding-right: 20px;
+                }
+            }
+        }
+        &__scroll {
+            i {
+                bottom: 80px;
+                border: none;
+                color: $hover-green;
+                box-shadow : 0px 7px 20px rgba(0,0,0,0.27);
+            }
+            &--btn:after {
+                content: "More Short Tips";
+                padding-left: 60px;
+                position: fixed;
+                left: 80px;
+                bottom: calc(80px + 13px);
+                font-family: 'source sans pro';
+                font-size: 26px;
+                color: $hover-green;
+            }
+        }
+
+    }
+    .hero {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &__images {
+            position: relative;
+
+            svg {
+                max-width: 100%;
+                position: absolute;
+            }
+
+            .main-img {
+                z-index: 10;
+            }
+
+            .shadow-1 {
+                z-index: 1;
+                transform: rotate(54deg) scale(1.032);
+            }
+
+            .shadow-2 {
+                z-index: 5;
+                transform: rotate(15deg) scale(1.032);
+            }
+        }
+
+        .col2 {
+            box-sizing: border-box;
+            flex-basis: 50%;
+            overflow-x: hidden;
+            padding-top: 50px;
+
+        }
+        .col1 {
+            box-sizing: border-box;
+            flex-basis: 45%;
+            padding-top: 50px;
+        }
+
+
+        .cta {
+            border-left: 4px solid $text-green;
+            padding-left: 40px;
+            margin-bottom: 50px;
+            a {
+                font-family: 'Source Sans Pro';
+                font-weight: regular;
+                font-size: 27px;
+                text-decoration: none;
+                background-color: $orange;
+                padding: 10px 25px;
+                color: $bg-color;
+                display: inline-block;
+
+                &:hover{
+                    text-decoration: none;
+                }
+                &:active {
+                    text-decoration: none;
+                }
+                &:visited {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .slider {
+        display: flex;
+        flex-wrap: nowrap;
+        column-count: 3;
+        flex-direction: row;
+        justify-content: space-between;
+        z-index: 200;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        margin-left: -4px;
+        
+        img {
+            max-width: 100%;
+        }
+        &--controll {
+            position: absolute;
+            bottom: 160px;
+            right: 60px;
+            p {
+                background-color: rgba(255, 255, 255, 0.79);
+                font-size: 26px;
+                color: $text-green;
+                display: inline-block;
+                text-align: center;
+                border-radius: 50px;
+                padding: 14px 20px;
+                margin-right: 10px;
+            }
+            a {
+                margin: 30px 0;
+                font-family: Fontawesome;
+                color: $text-green;
+                padding: 10px 0;
+            }
+            i {
+                font-size: 26px;
+                width: 26px;
+                text-align: center;
+                border-radius: 50px;
+                padding: 17px;
+                display: inline-block;
+                z-index: 300;
+                transform: rotate(-90deg);
+                background-color: rgba(255, 255, 255, 0.79);
+            }
+            i:hover {
+                color: white;
+                background: $hover-green;
+            }
+        }
+        
+    }
+}

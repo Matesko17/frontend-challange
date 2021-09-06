@@ -25,36 +25,36 @@ body {
     }
     @media (max-width: $min-xxl - 1) {
         h1 {
-            font-size: 75px;
+            font-size: 4.6875rem; /* 75px */
         }
         .text-highlight {
-            font-size: 70px;
+            font-size: 4.375rem; /* 70px */
         }
         p {
-            font-size: 22px;
+            font-size: 1.375rem; /* 22px */
         }
     }
 
     @media (max-width: $min-xl - 1) {
         h1 {
-            font-size: 65px;
+            font-size: 4.0625rem; /* 65px */
         }
         .text-highlight {
-            font-size: 60px;
+            font-size: 3.75rem; /* 60px */
         }
         p {
-            font-size: 18px;
+            font-size: 1.125rem; /* 18px */
         }
     }
     @media (max-width: $min-lg - 1) {
         h1 {
-            font-size: 50px;
+            font-size: 3.125rem; /* 50px */
         }
         .text-highlight {
-            font-size: 45px;
+            font-size: 2.8125rem; /* 45px */
         }
         p {
-            font-size: 16px;
+            font-size: 1rem; /* 16px */
         }
     }
 
@@ -69,14 +69,14 @@ body {
         box-shadow: -0.5rem 0.875rem 1.6875rem /* -8px 14px 27px */ rgba(0, 0, 0, 0.16);
         padding: 0.9375rem 1.25rem; /* 15px 20px */
         @media (max-width: $min-xxl - 1) {
-            top: 60px;
-            max-width: 200px;
+            top: 3.75rem; /* 60px */
+            max-width: 12.5rem; /* 200px */
             left: calc(100% - 230px);
 
         }
         @media (max-width: $min-xl - 1) {
-            top: 100px;
-            max-width: 150px;
+            top: 6.25rem; /* 100px */
+            max-width: 9.375rem; /* 150px */
             left: calc(100% - 185px);
         }
         h3 {
@@ -86,10 +86,10 @@ body {
             margin: 0;
             color: $text-green;
             @media (max-width: $min-xxl - 1) {
-                font-size: 30px;
+                font-size: 1.875rem; /* 30px */
             }
             @media (max-width: $min-xl - 1) {
-                font-size: 24px;
+                font-size: 1.5rem; /* 24px */
             }
         }
         p {
@@ -97,10 +97,10 @@ body {
             margin: 0;
             color: black;
             @media (max-width: $min-xxl - 1) {
-                font-size: 26px;
+                font-size: 1.625rem; /* 26px */
             }
             @media (max-width: $min-xl - 1) {
-                font-size: 20px;
+                font-size: 1.25rem; /* 20px */
             }
         }
         hr {
@@ -109,10 +109,10 @@ body {
             color: $orange;
             border: 0.125rem /* 2px */ solid $orange;
             @media (max-width: $min-xxl - 1) {
-                max-width: 120px;
+                max-width: 7.5rem; /* 120px */
             }
             @media (max-width: $min-xl - 1) {
-                max-width: 70px;
+                max-width: 4.375rem; /* 70px */
             }
         }
     }
@@ -128,12 +128,12 @@ body {
         align-items: center;
         padding-bottom: 18.75rem; /* 300px */
         @media (max-width: $min-xxl - 1) {
-            padding-bottom: 150px;
+            padding-bottom: 9.375rem; /* 150px */
             align-items: flex-start;
 
         }
         @media (max-width: $min-xl - 1) {
-            padding-bottom: 50px;
+            padding-bottom: 3.125rem; /* 50px */
         }
         a {
             margin: 2.5rem 0; /* 40px */
@@ -151,14 +151,14 @@ body {
             position: fixed;
             z-index: 300;
             @media (max-width: $min-xxl - 1) {
-                font-size: 20px;
-                width: 20px;
-                padding: 14px;
+                font-size: 1.25rem; /* 20px */
+                width: 1.25rem; /* 20px */
+                padding: 0.875rem; /* 14px */
             }
             @media (max-width: $min-xl - 1) {
-                font-size: 16px;
-                width: 16px;
-                padding: 10px;
+                font-size: 1rem; /* 16px */
+                width: 1rem; /* 16px */
+                padding: 0.625rem; /* 10px */
             }
         }
         i:hover {
@@ -176,7 +176,7 @@ body {
             @media (max-width: $min-lg - 1) {
                 flex-direction: row;
                 a {
-                    margin: 0 30px;
+                    margin: 0 1.875rem; /* 30px */
                 }
             }
             i:hover {
@@ -199,10 +199,10 @@ body {
                     font-weight: 400;
                     padding-right: 1.25rem; /* 20px */
                     @media (max-width: $min-xxl - 1) {
-                        font-size: 20px;
+                        font-size: 1.25rem; /* 20px */
                     }
                     @media (max-width: $min-xl - 1) {
-                        font-size: 16px;
+                        font-size: 1rem; /* 16px */
                     }
                 }
             }
@@ -227,12 +227,12 @@ body {
                 font-size: 1.625rem; /* 26px */
                 color: $hover-green;
                 @media (max-width: $min-xxl - 1) {
-                    font-size: 20px;
-                    padding-left: 30px;
+                    font-size: 1.25rem; /* 20px */
+                    padding-left: 1.875rem; /* 30px */
                 }
                 @media (max-width: $min-xl - 1) {
-                    font-size: 16px;
-                    padding-left: 15px;
+                    font-size: 1rem; /* 16px */
+                    padding-left: 0.9375rem; /* 15px */
                 }
             }
         }
@@ -256,13 +256,13 @@ body {
             @media (max-width: $min-xl - 1) {
             }
             @media (max-width: $min-lg - 1) {
-                margin-top: - 50px;
+                margin-top: - 3.125rem; /* 50px */
             }
             @media (max-width: $min-md - 1) {
-                margin-top: - 120px;
+                margin-top: - 7.5rem; /* 120px */
             }
             @media (max-width: $min-sm - 1) {
-                margin-top: - 100px;
+                margin-top: - 6.25rem; /* 100px */
             }
 
             svg {
@@ -321,14 +321,14 @@ body {
             @media (max-width: $min-xl - 1) {
             }
             @media (max-width: $min-lg - 1) {
-                min-height: 800px;
-                padding-top: 0px;
+                min-height: 50rem; /* 800px */
+                padding-top: 0rem; /* 0px */
             }
             @media (max-width: $min-md - 1) {
-                min-height: 600px;
+                min-height: 37.5rem; /* 600px */
             }
             @media (max-width: $min-sm - 1) {
-                min-height: 530px;
+                min-height: 33.125rem; /* 530px */
             }
         }
 
@@ -355,10 +355,10 @@ body {
                 color: $bg-color;
                 display: inline-block;
                 @media (max-width: $min-xxl - 1) {
-                    font-size: 23px;
+                    font-size: 1.4375rem; /* 23px */
                 }
                 @media (max-width: $min-xl - 1) {
-                    font-size: 18px;
+                    font-size: 1.125rem; /* 18px */
                 }
 
 
@@ -406,12 +406,12 @@ body {
                 padding: 0.875rem 1.25rem; /* 14px 20px */
                 margin-right: 0.625rem; /* 10px */
                 @media (max-width: $min-xxl - 1) {
-                    font-size: 20px;
-                    padding: 12px 20px;
+                    font-size: 1.25rem; /* 20px */
+                    padding: 0.75rem 1.25rem; /* 12px 20px */
                 }
                 @media (max-width: $min-xl - 1) {
-                    font-size: 16px;
-                    padding: 8px 20px;
+                    font-size: 1rem; /* 16px */
+                    padding: 0.5rem 1.25rem; /* 8px 20px */
                 }
     
             }
@@ -432,14 +432,14 @@ body {
                 transform: rotate(-90deg);
                 background-color: rgba(255, 255, 255, 0.79);
                 @media (max-width: $min-xxl - 1) {
-                    font-size: 20px;
-                    width: 20px;
-                    padding: 14px;
+                    font-size: 1.25rem; /* 20px */
+                    width: 1.25rem; /* 20px */
+                    padding: 0.875rem; /* 14px */
                 }
                 @media (max-width: $min-xl - 1) {
-                    font-size: 16px;
-                    width: 16px;
-                    padding: 10px;
+                    font-size: 1rem; /* 16px */
+                    width: 1rem; /* 16px */
+                    padding: 0.625rem; /* 10px */
                 }
     
             }
